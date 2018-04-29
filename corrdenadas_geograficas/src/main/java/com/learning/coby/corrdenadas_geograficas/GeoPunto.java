@@ -6,8 +6,8 @@ public class GeoPunto {
     private double longitud;
 
     public GeoPunto(double latitud, double longitud) {
-        this.latitud = latitud;
-        this.longitud = longitud;
+        this.longitud = (int) (longitud * 1E6);
+        this.latitud = (int) (latitud * 1E6);
     }
 
     public double distancia(GeoPunto punto)
